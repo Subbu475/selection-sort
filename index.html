@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="content">
+            <!-- Sorting Visualizer -->
+            <div class="visualizer">
+                <h1>Selection Sort Visualizer</h1>
+                <p id="explanation">Click "Generate New Array" to start!</p>
+                <div class="controls">
+                    <button id="generate">Generate New Array</button>
+                    <button id="start">Start Selection Sort</button>
+                    <button id="pause">Pause</button>
+                    <button id="resume">Resume</button>
+                </div>
+                <div id="array-container"></div>
+            </div>
+
+            <!-- Info and Steps -->
+            <div class="info-panel">
+                <h2>What is Selection Sort?</h2>
+                <p>
+                    <strong>Selection Sort</strong> is an algorithm that repeatedly selects the smallest unsorted element and swaps it with the first unsorted element, until the array is sorted.
+                </p>
+                <h3>Step-by-Step Process:</h3>
+                <ul id="steps">
+                    <li>Step 1: Click "Generate New Array" to create a random array.</li>
+                    <li>Step 2: Click "Start Selection Sort" to begin sorting.</li>
+                    <li>Step 3: Watch as each step is explained dynamically.</li>
+                </ul>
+
+                <div id="current-step">
+                    <h3>Current Step:</h3>
+                    <p>Click "Generate New Array" to start!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
